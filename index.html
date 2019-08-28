@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>透明的导航栏</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+		<script src="js/mui.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav mui-bar-transparent" data-top='0' data-offset='150' data-duration='16'
+		 data-scrollby=".mui-scroll-wrapper">
+			<h1 class="mui-title">透明的导航栏</h1>
+		</header>
+		<div class="mui-content">
+			<!--为了使页面可以滑动这里额外加了一个有高度的div-->
+			<div id="" style="height: 1500px;">
+
+			</div>
+		</div>
+		<script type="text/javascript">
+			mui('.mui-bar-transparent').transparent({
+				top: 0,
+				offset: 150,
+				duration: 16,
+				scrollby: document.querySelector('.mui-scroll-wrapper')
+			});
+		</script>
+	</body>
+</html>
